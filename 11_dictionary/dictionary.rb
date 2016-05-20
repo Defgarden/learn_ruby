@@ -38,8 +38,8 @@ class Dictionary
 	end
 
 	def printable
-	   @dictionary.map do |key_val|
-	      %Q{[#{key_val.first}] "#{key_val.last}"}
+	   @dictionary.map do |key, value|
+	      %Q{[#{key}] "#{value}"}
 	   end.sort.join("\n")
 		
 	end
